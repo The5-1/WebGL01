@@ -5,12 +5,25 @@ var examplesBasicJS = {
 
     run: function()
     {
+        examplesBasicJS.example_Variables();
         examplesBasicJS.example_Objects();
         examplesBasicJS.example_Properties();
         examplesBasicJS.example_Methods();
         examplesBasicJS.example_Constructor();
         examplesBasicJS.example_Prototypes();
 
+    },
+
+    example_Variables: function()
+    {
+        {
+        let a = 1; //ends at block
+        const b = 2; //also ends at block but is constant, member properties of it are not const!
+        var c = 3; //ends at function!
+        }
+        //console.log(a); //ERROR: a is not defined --> it ended with its block
+        //console.log(b); //ERROR: b is not defined --> it ended with its block
+        console.log(c); //c ends at the function, not the block!
     },
 
     // ":" = examplesBasicJS.example_Objects = function(){...}
@@ -127,4 +140,4 @@ var examplesBasicJS = {
 
 };
 
-examplesBasicJS.run();
+//examplesBasicJS.run();
