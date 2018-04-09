@@ -23,5 +23,5 @@ function greeter(person) {
     return "Hello, " + person.firstName + " " + person.lastName;
 }
 var user = new Student("James", "M.", "Willson");
-console.log(greeter(user));
 console.log(user.fullName);
+console.log(greeter(user));
