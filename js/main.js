@@ -184,3 +184,5 @@ function main() {
 
 
 main(); //run main
+
+//GL.getExtension('WEBGL_lose_context').loseContext();
